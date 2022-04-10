@@ -25,6 +25,18 @@ export class AppComponent {
 
   title = 'Create-quote';
 
+  get maxUpVote() {
+    let upVotes = []
+    for (const quote of this.allQuotes) {
+      upVotes.push(quote.upVote)
+    }
+    return upVotes;
+  }
+
+  get topUpvote() {
+    return Math.max(...this.maxUpVote)
+  }
+
   get quotes() {
     return this.allQuotes;
   }
@@ -39,7 +51,19 @@ export class AppComponent {
     })
   }
 
-  downVote(vote:object) {
-    this.allQuotes.indexOf
+  upvote(quote) {
+    let index = this.allQuotes.indexOf(quote);
+    this.allQuotes[index] = { ...this.allQuotes[index] };
+    this.allQuotes[index].upVote += 1;
+  }
+
+  downvote(quote) {
+    let index = this.allQuotes.indexOf(quote);
+    this.allQuotes[index] = { ...this.allQuotes[index] };
+    this.allQuotes[index].downVote += 1;
+  }
+
+  remove(quote) {
+    this.allQuotes.splice(this.allQuotes.indexOf(quote), 1);
   }
 }
