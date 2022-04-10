@@ -15,6 +15,11 @@
     type="text"
     />
     <button (click)="addQuote(quote.value,author.value,owner.value);quote.value='';author.value='';owner.value=''">Add Quote</button>
-    
-
+    <div>
+<ul>
+    <li *ngFor="let quote of quotes">
+        Quote: {{quote.quote}} || Author: {{quote.author}} || Owner: {{quote.owner}} || UpVote: <button>{{quote.upVote}}</button> || DownVote: <button>{{quote.downVote}}</button>
+    </li>
+</ul>
+    </div>
 </div>
