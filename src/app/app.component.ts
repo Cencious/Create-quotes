@@ -29,3 +29,17 @@ export class AppComponent {
     return this.allQuotes;
   }
 
+  addQuote(quote: string, author: string, owner: string, upVote: number = 0, downVote: number = 0) {
+    this.allQuotes.unshift({
+      quote,
+      author,
+      owner,
+      upVote,
+      downVote
+    })
+  }
+
+  downVote(vote:object) {
+    this.allQuotes.indexOf
+  }
+}
