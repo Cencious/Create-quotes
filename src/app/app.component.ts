@@ -23,4 +23,6 @@ export class AppComponent {
     }
   ]
 
+  title = 'Create-quote';
+
   
