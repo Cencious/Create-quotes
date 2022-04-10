@@ -25,4 +25,7 @@ export class AppComponent {
 
   title = 'Create-quote';
 
-  
+  get quotes() {
+    return this.allQuotes;
+  }
+
