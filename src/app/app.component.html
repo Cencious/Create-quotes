@@ -2,24 +2,32 @@
 <div>
     <h1>Create Quotes</h1>
     <p>create quotes and validate them</p>
+    <label>Quote</label><br>
     <input
     #quote
     type="text"
-    />
+    /><br>
+    <label>Author</label><br>
         <input
     #author
     type="text"
-    />
+    /><br>
+    <label>Owner</label><br>
         <input
     #owner
     type="text"
-    />
+    /><br>
     <button (click)="addQuote(quote.value,author.value,owner.value);quote.value='';author.value='';owner.value=''">Add Quote</button>
     <div>
-<ul>
+     
+<ol>
     <li *ngFor="let quote of quotes">
-        Quote: {{quote.quote}} || Author: {{quote.author}} || Owner: {{quote.owner}} || UpVote: <button>{{quote.upVote}}</button> || DownVote: <button>{{quote.downVote}}</button>
+        <app-quote
+        (remove)="remove(quote)"
+        (upvote)="upvote(quote)"
+        (downvote)="downvote(quote)"
+        [quote]="quote"></app-quote>
     </li>
-</ul>
+</ol>
     </div>
 </div>
