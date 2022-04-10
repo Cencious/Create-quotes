@@ -10,4 +10,5 @@ export class QuoteComponent {
   @Input() quote: Quote;
   @Output() upvote = new EventEmitter<Quote>();
   @Output() downvote = new EventEmitter<Quote>();
+  @Output() remove = new EventEmitter<Quote>();
 }
