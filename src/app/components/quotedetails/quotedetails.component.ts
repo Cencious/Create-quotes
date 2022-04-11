@@ -6,6 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./quotedetails.component.css']
 })
 export class QuotedetailsComponent implements OnInit {
+  
 
   constructor() { }
 
