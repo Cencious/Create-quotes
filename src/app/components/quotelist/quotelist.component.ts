@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./quotelist.component.css']
 })
 export class QuotelistComponent implements OnInit {
+ 
 
   constructor() { }
 
