@@ -1,0 +1,28 @@
+*{
+    color: rgb(1, 37, 15);
+    background-color: rgba(106, 175, 202, 0.911);
+    text-align: center;
+    padding: 5px 5px;
+    box-shadow: 0 4px 30px rgb(12, 11, 11);
+    backdrop-filter: blur(5px);
+    font-size: 30px;
+    font-weight: 50; 
+}
+.create h1{
+  font-style: italic;
+  color: rgb(153, 24, 24);
+  font-size: 40px;
+  font-weight: bold;
+}
+.create p{
+    font-size: 40px;
+    font-weight: 800;
+    color: rgba(20, 17, 218, 0.822);
+    
+}
+label{
+    color: rgb(13, 13, 80);
+    font-weight: 750;
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
