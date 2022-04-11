@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { QuotelistComponent } from './components/quotelist/quotelist.component';
 import { QuotedetailsComponent } from './components/quotedetails/quotedetails.component';
 import { QuoteComponent } from './components/quote/quote.component';
+import { StrikeQuoteDirective } from './strike-quote.directive';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { QuoteComponent } from './components/quote/quote.component';
     QuotelistComponent,
     QuotedetailsComponent,
     QuoteComponent,
+    StrikeQuoteDirective,
    
   ],
   imports: [
