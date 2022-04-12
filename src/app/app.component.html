@@ -22,7 +22,8 @@
     <div>
      
 <ol>
-    <li *ngFor="let quote of quotes">
+
+    <li  appHighlight *ngFor="let quote of quotes">
         <app-quote
         (remove)="remove(quote)"
         (upvote)="upvote(quote)"

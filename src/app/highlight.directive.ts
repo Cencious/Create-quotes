@@ -1,12 +1,11 @@
 import { Directive, ElementRef, HostListener } from '@angular/core';
 
 @Directive({
-  selector: '[appStrikeQuote]'
+  selector: '[appHighlight]'
 })
-export class StrikeQuoteDirective {
+export class HighlightDirective {
 
-  constructor(private elem:ElementRef) 
-  { this.elem.nativeElement.style.textDecoration='line';}
+  constructor(private elem:ElementRef) { this.elem.nativeElement.style.textDecoration='line';}
   @HostListener("click") onClicks() {
     this.textDeco("")
   }
