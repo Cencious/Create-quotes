@@ -11,4 +11,7 @@ export class QuoteComponent {
   @Output() upvote = new EventEmitter<Quote>();
   @Output() downvote = new EventEmitter<Quote>();
   @Output() remove = new EventEmitter<Quote>();
+
+  title = 'Welcome and enjoy the quotes';
+
 }

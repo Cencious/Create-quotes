@@ -5,15 +5,16 @@ import { Directive, ElementRef, HostListener } from '@angular/core';
 })
 export class StrikeQuoteDirective {
 
-  constructor(private elem:ElementRef) { this.elem.nativeElement.style.textDecoration='line-through';}
+  constructor(private elem:ElementRef) 
+  { this.elem.nativeElement.style.textDecoration='line-through';}
   @HostListener("click") onClicks() {
-    this.textDeco("green")
+    this.textDeco("")
   }
   @HostListener("dblclick") onDoubleClicks(){
-    this.textDeco("None")
+    this.textDeco("")
   }
   private textDeco(action:string) {
-    this.elem.nativeElement.style.color=action;
+    this.elem.nativeElement.style.textDecoration=action;
   }
 
 
