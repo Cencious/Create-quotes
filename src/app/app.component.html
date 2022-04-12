@@ -23,7 +23,7 @@
      
 <ol>
 
-    <li  appHighlight *ngFor="let quote of quotes">
+    <li appStrikeQuote *ngFor="let quote of quotes">
         <app-quote
         (remove)="remove(quote)"
         (upvote)="upvote(quote)"
